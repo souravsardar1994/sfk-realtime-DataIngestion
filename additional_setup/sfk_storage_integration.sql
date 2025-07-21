@@ -1,0 +1,15 @@
+USE ROLE ACCOUNTADMIN;
+
+-- DROP INTEGRATION s3_int;
+
+CREATE STORAGE INTEGRATION s3_int
+  TYPE = EXTERNAL_STAGE
+  STORAGE_PROVIDER = S3
+  ENABLED = TRUE
+  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::241526746228:role/SnowflakeS3Access_role'
+  STORAGE_ALLOWED_LOCATIONS = ('s3://snowpipe-demo-ss-source/');
+
+-- Get Snowflake's External ID
+DESC INTEGRATION s3_int;
+
+
