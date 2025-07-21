@@ -6,9 +6,9 @@ AWS_ACCESS_KEY_ID = ""  # In production, use environment variables
 AWS_SECRET_ACCESS_KEY = ""
 
 # Snowflake Configuration
-SNOWFLAKE_ACCOUNT = "eteaedg-qq59362"
-SNOWFLAKE_USER = "souravsardar"
-SNOWFLAKE_PASSWORD = "passwordAbcd@2345#"
+SNOWFLAKE_ACCOUNT = ""
+SNOWFLAKE_USER = "<sfk-user>"
+SNOWFLAKE_PASSWORD = "<sfk-password>"
 SNOWFLAKE_WAREHOUSE = "COMPUTE_WH"
 SNOWFLAKE_DATABASE = "SNOWPIPE_DEMO"
 SNOWFLAKE_SCHEMA = "DATA_INGESTION"
